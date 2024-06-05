@@ -1,0 +1,39 @@
+/* Mobile Menu */
+
+#mobile-menu {
+    background-color: #1a1a1a;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+#mobile-items {
+    display: flex;
+    align-items: center;
+}
+
+#mobile-items img {
+    margin-right: 1em;
+}
+
+.menu-icon {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+}
+
+
+
+button {
+    background: inherit;
+    border: none;
+}
+
+.menu-icon svg path{
+    stroke: white;
+}
