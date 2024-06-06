@@ -49,8 +49,11 @@
             <div>
                 <% products[0].items.forEach(item => { %>
                     <% console.log("Dit is test", item.fields.title) %>
+                    <img src="/assets/IMG_test2.jpeg" alt="" width="100%">
+                    <%= item.fields.title %>
+                    <%= item.fields.description %>
                 <%})%>
-                <img src="/assets/IMG_test2.jpeg" alt="">
+                <!-- <img src="/assets/IMG_test2.jpeg" alt="" width="100%"> -->
             </div>
         </section>
     </body>
