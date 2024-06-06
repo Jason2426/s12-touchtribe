@@ -1,0 +1,3 @@
+<% items.slice(0, 1).forEach(item => { %>
+    <% item.title %>
+<% }) %>
