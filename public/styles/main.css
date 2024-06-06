@@ -3,8 +3,121 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
     background-color: #121212;
 }
+
+main {
+    margin-top: 5em;
+}
+
+/* #region Highlighted-item styling */
+
+#highlighted-item {
+    
+    /* Container for item picture */
+    #item-picture img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    /* Container for item information */
+    #item-info {
+        margin: 7.5%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 18em;
+    }
+
+    /* Container for title and price */
+    .title-and-price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .title-and-price h2 {
+        font-size: 2.2em;
+    }
+
+    .title-and-price span {
+        font-size: 1.7em;
+        font-weight: lighter;
+        align-self: flex-end; /* Aligns the span to the bottom */
+    }
+
+    /* Description styling */
+    .description > p {
+        font-weight: lighter;
+        font-size: 1.2em;
+        color: rgb(204, 205, 206);
+        margin: 1em 0;
+    }
+
+    /* Table styling */
+    table {
+        width: 75%;
+        border-collapse: collapse;
+        margin: 1em 0;
+    }
+
+    table th,
+    table td {
+        color: white;
+        border: 1px solid #fff;
+        padding: 1em;
+        text-align: center;
+        width: 25%;
+    }
+
+    table th {
+        font-weight: bold;
+    }
+
+    table th:hover {
+        background-color: white;
+        color: #121212;
+        transition: .15s ease-in;
+    }
+
+    /* Container for add-item section */
+    .add-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .add-item p {
+        font-weight: lighter;
+        font-size: 1.2em;
+        color: rgb(204, 205, 206);
+    }
+
+    /* Button styling */
+    #cartBtn {
+        margin-left: 15px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 2px;
+    }
+
+    #cartBtn:hover {
+        background-color: #01DECA;
+        transition: .15s ease-in;
+    }
+}
+
+/* #endregion */
+
+#products {
+    background-color: white;
+}
+
