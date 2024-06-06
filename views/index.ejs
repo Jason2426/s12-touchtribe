@@ -1,15 +1,48 @@
+<link rel="stylesheet" href="/styles/main.css">
 
+</head>
 
 <%- include('./partials/head' , { title: 'TouchTribe Webshop' }) %>
 
 <%- include('./partials/mobile-navbar') %>
 
-<body>
-    <section id="highlight">
+<main>
+    <body>
+        <section id="highlighted-item">
+            <section id="item-picture">
+                <img src="/assets/IMG_test.jpeg" alt="">
+            </section>
+            <section id="item-info">
+                <div class="title-and-price">
+                    <h2>Sweater</h2>
+                    <span>25 tokens</span>
+                </div>
+                <div class="description">
+                    <p>Extra oversized hoodie voor heren en dames</p>
+                </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>XS</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                <div class="add-item">
+                    <p>Toevoegen aan winkelwagen</p> 
+                    <button id="cartBtn" onclick="addCart()">
+                        <svg width="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </section>
 
-    </section>
-
-    <section id="products">
-
-    </section>
-</body>
+        <section id="products">
+            <img src="/assets/IMG_test2.jpeg" alt="" width="250">
+        </section>
+    </body>
+</main>
