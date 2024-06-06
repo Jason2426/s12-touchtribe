@@ -23,11 +23,11 @@ app.use(express.static('public'));
 const apiURL = "https://cdn.contentful.com/spaces/x2maf5pkzgmb/entries/?access_token=VcJDwIe2eizDEjIwdVdDsF7tcQZ-0_uIrcP4BiDULsg&content_type=product&select=fields"
 
 app.get('/', function(request, response){
-Promise.all([fetchJson(apiURL)])
-    .then((itemsData) => {
-    response.render('index', {items: itemsData.items})
-    console.log(itemsData);
-});
+    Promise.all([fetchJson(apiURL)])
+        .then((itemsData) => {
+        response.render('index', {products: itemsData})
+        console.log(itemsData)
+    });
 })
 
 // POST route for the index page
