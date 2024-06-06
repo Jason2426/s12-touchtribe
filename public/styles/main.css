@@ -17,7 +17,7 @@ main {
 /* #region Highlighted-item styling */
 
 #highlighted-item {
-    
+
     /* Container for item picture */
     #item-picture img {
         max-width: 100%;
@@ -117,7 +117,17 @@ main {
 
 /* #endregion */
 
+/* #region product */
+
 #products {
     background-color: white;
+    height: 60em;
+
+    img{
+        
+    }
 }
+
+
+/* #endregion product */
 

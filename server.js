@@ -1,5 +1,7 @@
 // Import the npm package express from the node_modules map
 
+import express from 'express';
+
 // Import the fetchJson function from the ./helpers directory
 import fetchJson from './helpers/fetch-json.js';
 
@@ -23,7 +25,7 @@ const apiURL = "https://cdn.contentful.com/spaces/x2maf5pkzgmb/entries/?access_t
 app.get('/', function(request, response){
 Promise.all([fetchJson(apiURL)])
     .then((itemsData) => {
-    response.render('index', {items: itemsData})
+    response.render('index', {items: itemsData.items})
     console.log(itemsData);
 });
 })

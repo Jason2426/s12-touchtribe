@@ -9,6 +9,9 @@
 <main>
     <body>
         <section id="highlighted-item">
+            <% items.forEach(item => { %>
+                <% console.log(item) %>
+            
             <section id="item-picture">
                 <img src="/assets/IMG_test.jpeg" alt="">
             </section>
@@ -39,10 +42,13 @@
                     </button>
                 </div>
             </section>
+            <% }) %>
         </section>
 
         <section id="products">
-            <img src="/assets/IMG_test2.jpeg" alt="" width="250">
+            <div>
+                <img src="/assets/IMG_test2.jpeg" alt="">
+            </div>
         </section>
     </body>
 </main>
