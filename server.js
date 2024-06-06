@@ -1,5 +1,4 @@
 // Import the npm package express from the node_modules map
-import express from 'express'
 
 // Import the fetchJson function from the ./helpers directory
 import fetchJson from './helpers/fetch-json.js';
@@ -19,11 +18,12 @@ app.set('views', './views');
 // Use the 'public' directory for static resources
 app.use(express.static('public'));
 
-const apiURL = "https://cdn.contentful.com/spaces/x2maf5pkzgmb/entries/?access_token=VcJDwIe2eizDEjIwdVdDsF7tcQZ-0_uIrcP4BiDULsg&content_type=product&select=fields.items"
+const apiURL = "https://cdn.contentful.com/spaces/x2maf5pkzgmb/entries/?access_token=VcJDwIe2eizDEjIwdVdDsF7tcQZ-0_uIrcP4BiDULsg&content_type=product&select=fields"
 
 app.get('/', function(request, response){
-Promise.all([fetchJson(apiURL)]).then((itemsData) => {
-    response.render('index', {product: itemsData})
+Promise.all([fetchJson(apiURL)])
+    .then((itemsData) => {
+    response.render('index', {items: itemsData})
     console.log(itemsData);
 });
 })
@@ -31,6 +31,7 @@ Promise.all([fetchJson(apiURL)]).then((itemsData) => {
 // POST route for the index page
 app.post('/', function (request, response) {
     // Currently not handling POST data, redirect to the homepage
+    // console.log(itemsData)
     response.redirect(303, '/');
 });
 
@@ -40,5 +41,5 @@ app.set('port', process.env.PORT || 2024);
 // Start express and listen on the specified port : 2024
 app.listen(app.get('port'), function () {
     // Log a message to the console with the port number
-    console.log(`yoo stuff is running on : http://localhost:${app.get('port')}`);
+    console.log(`http://localhost:${app.get('port')}`);
 });
