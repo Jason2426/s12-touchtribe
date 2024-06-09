@@ -27,7 +27,6 @@ app.get('/', function(request, response){
         fetchJson(`${productsURL}`)
     ]).then((productData) => {
         response.render('index', {products: productData})
-        console.log(products)
     });
 })
 

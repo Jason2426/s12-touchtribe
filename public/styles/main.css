@@ -16,26 +16,26 @@ main {
 
 /* #region Highlighted-item styling */
 
-#highlighted-item {
+.highlighted-product {
+
 
     /* Container for item picture */
-    #item-picture img {
+    .h-product-img img {
         max-width: 100%;
         object-fit: cover;
     }
 
     /* Container for item information */
-    #item-info {
+    .h-product-info {
         margin: 7.5%;
         color: white;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 18em;
     }
 
     /* Container for title and price */
-    .title-and-price {
+    .h-title-and-price {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -43,24 +43,29 @@ main {
         margin-bottom: 15px;
     }
 
-    .title-and-price h2 {
+    .h-title-and-price h2 {
         font-size: 2.2em;
     }
 
-    .title-and-price span {
+    .h-title-and-price span {
         font-size: 1.7em;
         font-weight: lighter;
         align-self: flex-end; /* Aligns the span to the bottom */
     }
 
     /* Description styling */
-    .description > p {
+    .h-description > p {
         font-weight: lighter;
         font-size: 1.2em;
         color: rgb(204, 205, 206);
         margin: 1em 0;
     }
 
+    .size-and-add {
+        display: flex;
+        align-items: center;
+
+    }
     /* Table styling */
     table {
         width: 75%;
@@ -87,26 +92,11 @@ main {
         transition: .15s ease-in;
     }
 
-    /* Container for add-item section */
-    .add-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 1em;
-    }
-
-    .add-item p {
-        font-weight: lighter;
-        font-size: 1.2em;
-        color: rgb(204, 205, 206);
-    }
-
     /* Button styling */
     #cartBtn {
-        margin-left: 15px;
+        margin-left: 2.6em;
         background-color: #fff;
-        padding: 10px;
-        border-radius: 2px;
+        padding: 1.05em;
     }
 
     #cartBtn:hover {
@@ -117,17 +107,122 @@ main {
 
 /* #endregion */
 
-/* #region product */
+/* #region rest of the products styling */
 
-#products {
-    background-color: white;
-    height: 60em;
+.products {
+    background-color: rgb(246, 246, 246);
 
-    img{
-        
+    .products-container{
+        padding: 2.5em 2.5em;
+
+        .product {
+            border: 1px dashed; /* to check size */
+        }
+
+        .product-img {
+            width: 100%;
+        }
+
+        .product-img img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1em 0 2em 0;
+        }
+
+        .title-and-price{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .title-and-price h2{
+            font-size: 1.8em;
+        }
+
+        .title-and-price span {
+            font-size: 1.5em;
+            font-weight: lighter;
+            align-self: flex-end;
+        }
+
+        .product-description > p {
+            font-weight: lighter;
+            font-size: 1.3em;
+            color: #8C8C8C;
+            margin: 1em 0;
+        }
+
+        /* Table styling */
+
+        .size-and-add {
+
+            display: flex;
+            align-items: center;
+
+            table {
+                width: 75%;
+                border-collapse: collapse;
+                margin: .5em 0;
+            }
+    
+            table th,
+            table td {
+                color: black;
+                border: 1px solid black;
+                padding: 1em;
+                text-align: center;
+                width: 25%;
+            }
+    
+            table th {
+                font-weight: bold;
+            }
+    
+            table th:hover {
+                background-color: black;
+                color: white;
+                transition: .15s ease-in;
+            }
+
+            /* Button styling */
+            #cartBtn {
+                margin-left: 2.5em;
+                border: 1px solid rgb(103, 103, 103);
+                padding: 12.5px;
+
+            }
+            #cartBtn:hover {
+                background-color: #01DECA;
+                transition: .15s ease-in;
+            }
+        }
     }
+
 }
 
 
 /* #endregion product */
 
+/* #region Media queries */
+
+/* #endregion */
+
+
+
+/* #region Keyframe animations */ 
+
+@keyframes reveal {
+    0% {
+      transform: translate(0,200%);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+
+  /* #endregion */
