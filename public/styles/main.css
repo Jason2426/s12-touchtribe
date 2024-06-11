@@ -219,6 +219,24 @@ main {
 
 /* #region Media queries */
 
+@media (width >= 650px ) and (width <= 999px){
+
+    .products-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: calc(2.5em);
+
+    }
+
+    .product {
+        width: 48%;
+
+    }
+
+}
+
 @media (min-width: 62.5em){
     
     main {
@@ -322,8 +340,6 @@ main {
     
 }
 
-
-
 /* #region Keyframe animations */ 
 
 @keyframes reveal {
@@ -357,4 +373,17 @@ main {
     
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
   /* #endregion */
