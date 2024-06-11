@@ -123,10 +123,6 @@ main {
 }
     .products-container {
         padding: 2.5em 2.5em;
-        
-        .product {
-            border: 1px dashed; /* check size of boxes */
-        }
 
         .product-img {
             width: 100%;
