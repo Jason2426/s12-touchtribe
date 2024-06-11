@@ -6,8 +6,12 @@
     font-family: 'Inter', sans-serif;
 }
 
+:root {
+    --main-bg-color : #121212;
+}
+
 body {
-    background-color: #121212;
+    background-color: var(--main-bg-color);
 }
 
 main {
@@ -88,7 +92,7 @@ main {
 
     table th:hover {
         background-color: white;
-        color: #121212;
+        color: var(--main-bg-color);
         transition: .15s ease-in;
     }
 

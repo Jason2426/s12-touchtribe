@@ -1,7 +1,7 @@
 /* Mobile Menu */
 
 #mobile-menu {
-    background-color: #121212b3;
+    background-color: #121212b3; /* gradient version of main */
     height: 5em;
     display: flex;
     justify-content: space-between;
