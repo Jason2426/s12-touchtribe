@@ -1,6 +1,6 @@
 /* Mobile Menu */
 
-#mobile-menu {
+.mobile-menu {
     background-color: #121212b3; /* gradient version of main */
     height: 5em;
     display: flex;
@@ -12,12 +12,12 @@
     width: 100%;
 }
 
-#mobile-items {
+.mobile-items {
     display: flex;
     align-items: center;
 }
 
-#mobile-items img {
+.mobile-items img {
     margin-right: 1em;
 }
 
@@ -39,4 +39,11 @@ button {
 
 .menu-icon svg path{
     stroke: white;
+}
+
+@media (min-width: 62.5em){
+    
+    .mobile-menu {
+        display: none;
+    }
 }

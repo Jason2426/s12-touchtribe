@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -110,6 +111,10 @@ main {
         background-color: #01DECA;
         transition: .15s ease-in;
     }
+
+   .more-products-cta {
+        display: none;
+   }
 }
 
 /* #endregion */
@@ -181,7 +186,7 @@ main {
             table td {
                 color: black;
                 border: 1px solid black;
-                padding: 1em;
+                padding: 2em;
                 text-align: center;
                 width: 25%;
             }
@@ -217,8 +222,92 @@ main {
 
 /* #region Media queries */
 
-/* #endregion */
+@media (min-width: 62.5em){
+    
+    main {
+        margin-top: 0;
+    }
 
+    .highlighted-product{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .h-product-img{
+        order: 2;
+        width: 55%;
+
+    }
+
+    .highlighted-product {
+
+        .h-product-info{
+            justify-content: flex-start;
+            order: 1;
+            width: 50%;
+        }
+
+        .h-title-and-price h2{
+            font-size: 3em;
+        }
+
+        .h-description > p {
+            margin: 2em 0;
+        }
+
+        table {
+            width: 60%;
+        }
+        
+        table th,
+        table td {
+            padding: 1.5em;
+        }
+
+        #cartBtn {
+            padding: 1.5em;
+        }
+
+        .more-products-cta{
+            display: flex;
+            align-items: center;
+            margin-top: auto; /* Push the cta to the bottom */
+        }
+
+        .tp-to-product {
+            display: flex;
+            color: inherit;
+            text-decoration: none;
+            align-items: center;
+        }
+
+        .tp-to-product > p {
+            margin-left: 1em;
+        }
+
+        .tp-to-product > p:hover {
+            color: var(--accent-color-green);
+            transition: .15s ease-in;
+        }
+
+
+
+        .moreProductsBtn {
+            border: 1px solid var(--accent-color-green);
+            padding: 1.5em;
+            animation: jump 2s infinite;
+        }
+
+        .moreProductsBtn:hover {
+            background-color: var(--accent-color-green);
+            transition: .15s ease-in;
+        }
+
+    } 
+
+}
+
+/* #endregion */
 
 
 /* #region Keyframe animations */ 
@@ -231,5 +320,27 @@ main {
       transform: translate(0,0);
     }
   }
+
+  @keyframes jump {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        /* transform: rotate(-0.25turn); */
+        border: 1px solid var(--accent-color-purple);
+    }
+
+    60% {
+        transform: translateY(-5px);
+        fill: 1px solid var(--accent-color-purple);
+    }
+    
+}
 
   /* #endregion */
