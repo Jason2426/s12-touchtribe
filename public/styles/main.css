@@ -248,7 +248,7 @@ main {
     }
 
     .h-description > p {
-        margin: 2em 0;
+        margin: 1.8em 0;
     }
 
     table {
@@ -313,10 +313,10 @@ main {
         
     }
 
+    /* #endregion */
     
 }
 
-/* #endregion */
 
 
 /* #region Keyframe animations */ 
