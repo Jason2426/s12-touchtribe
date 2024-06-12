@@ -90,6 +90,7 @@ main {
 
     }
     /* Table styling */
+
     table {
         width: 75%;
         border-collapse: collapse;
@@ -114,6 +115,21 @@ main {
         color: var(--main-bg-color);
         transition: .15s ease-in;
     }
+
+    table th button {
+        /* remove default button styling */
+        background: none;
+        border: none;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+    }
+
+    table th.selected {
+        background-color: #fff;
+        color: var(--main-bg-color);
+    }
+
 
     /* Button styling */
     #cartBtn {
