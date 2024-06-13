@@ -1,22 +1,7 @@
-<% items.slice(0, 1).forEach(item => { %>
-    <% item.title %>
-<% }) %>
 
-const sizesURL = "https://cdn.contentful.com/spaces/x2maf5pkzgmb/environments/master/entries?access_token=VcJDwIe2eizDEjIwdVdDsF7tcQZ-0_uIrcP4BiDULsg&select=fields&content_type=size"
+// Show size ids of each product 
+<% console.log(item.fields.size.sys.id) %>
 
+<% console.log(item.fields.size.sys.id) %>
 
-
-<% products[0].items.forEach(item => { %>
-                    <% console.log(item.fields.title) %>
-                    <!-- <img src="/assets/IMG_test2.jpeg" alt="" width="100%"> -->
-                    <%= item.fields.title %>
-                    <%= item.fields.description %>
-                <%})%>
-
-
-                <% products[0].items.forEach(item => { %>
-                    <% console.log(item.fields.title) %>
-                    <img src="/assets/IMG_test2.jpeg" alt="" width="75%">
-                    <%= item.fields.title %>
-                    <%= item.fields.description %>
-                <%})%>
+                <% console.log("Dit is het product :", item.fields.title) %>

@@ -1,0 +1,54 @@
+<style>
+    /* styling for test ground */
+
+    body{
+        background-color: #121212;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+    }
+    .container{
+        display: flex; 
+    }
+    .all-products{
+        margin-right: 3em;
+    }
+    .config-products{
+        margin-right: 3em;
+    }
+
+    span{
+        color: cyan;
+    }
+    
+</style>
+
+
+<body>
+    <h1>Testground</h1>
+
+    <section class="container">
+        <section class="all-products">
+            <h2>All products</h2>
+            <% products.items.forEach(item => { %>
+                <h3><%= item.fields.title %></h3>
+                <span>ID :<%= item.fields.sku %></span>
+            <%})%>
+        </section>
+
+        <section class="config-products">
+            <h2>Configurable products</h2>
+            <% configs.items.forEach(config => { %>
+                <h3><%= config.fields.title %></h3>
+                <span><%= config.fields.products[0].sys.id %></span>
+            <%})%>
+        </section>
+    
+        <section class="all-sizes">
+            <h2>All available sizes</h2>
+            <% sizes.items.forEach(size => { %>
+                <h3><%= size.fields.value %></h3>
+            <%})%>
+        </section>
+    </section>
+
+</body>
