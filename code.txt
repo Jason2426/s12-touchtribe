@@ -5,3 +5,10 @@
 <% console.log(item.fields.size.sys.id) %>
 
                 <% console.log("Dit is het product :", item.fields.title) %>
+
+
+<img src="<% if (post[0].avatar) { %>
+                                <%= post[0].avatar  %>
+                                <% } else { %>
+                                /images/author.png
+                            <% } %>" alt="Foto van auteur" class="author-img" loading="lazy">

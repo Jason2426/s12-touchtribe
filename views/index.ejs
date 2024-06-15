@@ -12,8 +12,11 @@
         <section class="highlighted-product">
             <% products.slice(0, 1).forEach(product => { %>
                 <section class="h-product-img">
-                    <img src="/assets/IMG_test.jpeg" alt="" loading="lazy">
-                    <% console.log(product.size) %>
+                    <picture>
+                        <source srcset="/assets/IMG_test.webp" type="image/webp">
+                        <source srcset="/assets/IMG_test.avif" type="image/avif">
+                        <img src="/assets/IMG_test.jpeg" alt="" loading="lazy">
+                    </picture>
                 </section>
                 <section class="h-product-info">
                     <div class="h-title-and-price">
@@ -59,7 +62,11 @@
                 <% products.slice(1).forEach(product => { %>
             <article class="product">
                 <section class="product-img">
-                    <img src="/assets/IMG_test2.jpeg" alt="">
+                    <picture>
+                        <source srcset="/assets/IMG_test2.webp" type="image/webp">
+                        <source srcset="/assets/IMG_test2.avif" type="image/avif">
+                        <img src="/assets/IMG_test2.jpeg" alt="" loading="lazy">
+                    </picture>
                 </section>
                 <section class="product-info">
                     <div class="title-and-price">
