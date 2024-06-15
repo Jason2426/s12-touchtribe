@@ -132,13 +132,13 @@ main {
 
 
     /* Button styling */
-    #cartBtn {
+    .cartBtn {
         margin-left: 2.6em;
         background-color: #fff;
         padding: 1.05em;
     }
 
-    #cartBtn:hover {
+    .cartBtn:hover {
         background-color: #01DECA;
         transition: .15s ease-in;
     }
@@ -228,14 +228,14 @@ main {
             }
 
             /* Button styling */
-            #cartBtn {
+            .cartBtn {
                 margin-left: 2.5em;
                 border: 1px solid rgb(103, 103, 103);
                 padding: 12.5px;
                 background-color: inherit;
 
             }
-            #cartBtn:hover {
+            .cartBtn:hover {
                 background-color: #01DECA;
                 transition: .15s ease-in;
             }
@@ -310,7 +310,7 @@ main {
         padding: 1.5em;
     }
 
-    #cartBtn {
+    .cartBtn {
         padding: 1.5em;
     }
 
