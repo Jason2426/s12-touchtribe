@@ -11,7 +11,7 @@
     --main-bg-color : #121212;
     --accent-color-purple: #8F62EC;
     --accent-color-green: #01DECA;
-
+    --white : #fff;
 
 }
 
@@ -52,7 +52,7 @@ main {
     /* Container for item information */
     .h-product-info {
         margin: 7.5%;
-        color: #fff;
+        color: var(--white);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -100,8 +100,8 @@ main {
 
     table th,
     table td {
-        color: #fff;
-        border: 1px solid #fff;
+        color: var(--white);
+        border: 1px solid var(--white);
         padding: var(--default-spacing);
         text-align: center;
         width: 25%;
@@ -112,7 +112,7 @@ main {
     }
 
     table th:hover {
-        background-color: #fff;
+        background-color: var(--white);
         color: var(--main-bg-color);
         transition: .15s ease-in;
     }
@@ -126,7 +126,7 @@ main {
     }
 
     table th.selected {
-        background-color: #fff;
+        background-color: var(--white);
         color: var(--main-bg-color);
     }
 
@@ -134,7 +134,7 @@ main {
     /* Button styling */
     .cartBtn {
         margin-left: 2.6em;
-        background-color: #fff;
+        background-color: var(--white);
         padding: 1.05em;
     }
 
@@ -210,8 +210,9 @@ main {
     
             table th,
             table td {
-                color: black;
-                border: 1px solid black;
+                --black : rgb(4, 4, 4);
+                color: var(--black);
+                border: 1px solid var(--black);
                 padding: var(--default-spacing);
                 text-align: center;
                 width: 25%;
@@ -222,8 +223,8 @@ main {
             }
     
             table th:hover {
-                background-color: black;
-                color: #fff;
+                background-color: var(--black);
+                color: var(--white);
                 transition: .15s ease-in;
             }
 
