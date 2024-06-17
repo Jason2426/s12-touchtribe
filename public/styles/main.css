@@ -25,7 +25,6 @@ main {
     margin-top: 5em;
 }
 
-/* PE */
 @supports(animation-timeline: scroll()){
 
     .progress {
@@ -43,7 +42,6 @@ main {
 }
 
 /* #region Highlighted-item styling */
-
 
     /* Container for item picture */
     .h-product-img img {
@@ -375,15 +373,6 @@ main {
 
 /* #region Keyframe animations */ 
 
-@keyframes reveal {
-    0% {
-      transform: translate(0,200%);
-    }
-    100% {
-      transform: translate(0,0);
-    }
-  }
-
   @keyframes jump {
 
     0%,
@@ -404,20 +393,6 @@ main {
         fill: 1px solid var(--accent-color-purple);
     }
     
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
 }
 
 @keyframes scaleProgress {
