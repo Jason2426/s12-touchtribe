@@ -7,8 +7,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: fixed;
+    top: 0; 
     width: 100%;
 }
 
@@ -38,7 +38,7 @@ button {
 }
 
 .menu-icon svg path{
-    stroke: white;
+    stroke: #fff;
 }
 
 @media (min-width: 62.5em){
