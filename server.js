@@ -51,7 +51,7 @@ app.get('/', function(request, response){
       });
       console.log(combinedProduct);
       response.render("index", {
-        products: combinedProduct, // Pass combinedProduct as 'products' to the EJS template
+        products: combinedProduct,
       });
     });
 
