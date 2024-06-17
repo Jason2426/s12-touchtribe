@@ -12,6 +12,7 @@
     --accent-color-purple: #8F62EC;
     --accent-color-green: #01DECA;
 
+
 }
 
 body {
@@ -19,6 +20,7 @@ body {
 }
 
 main {
+    --default-spacing : 1em;
     margin-top: 5em;
 }
 
@@ -51,7 +53,7 @@ main {
     /* Container for item information */
     .h-product-info {
         margin: 7.5%;
-        color: white;
+        color: #fff;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -81,7 +83,7 @@ main {
         font-weight: lighter;
         font-size: 1.2em;
         color: rgb(204, 205, 206);
-        margin: 1em 0;
+        margin: var(--default-spacing) 0;
     }
 
     .size-and-add {
@@ -94,14 +96,14 @@ main {
     table {
         width: 75%;
         border-collapse: collapse;
-        margin: 1em 0;
+        margin: var(--default-spacing) 0;
     }
 
     table th,
     table td {
-        color: white;
+        color: #fff;
         border: 1px solid #fff;
-        padding: 1em;
+        padding: var(--default-spacing);
         text-align: center;
         width: 25%;
     }
@@ -111,7 +113,7 @@ main {
     }
 
     table th:hover {
-        background-color: white;
+        background-color: #fff;
         color: var(--main-bg-color);
         transition: .15s ease-in;
     }
@@ -138,7 +140,7 @@ main {
     }
 
     .cartBtn:hover {
-        background-color: #01DECA;
+        background-color: var(--accent-color-green);
         transition: .15s ease-in;
     }
 
@@ -166,7 +168,7 @@ main {
         }
 
         .product-info {
-            padding: 1em 0 2em 0;
+            padding: var(--default-spacing) 0 2em 0;
         }
 
         .title-and-price{
@@ -191,7 +193,7 @@ main {
             font-weight: lighter;
             font-size: 1.3em;
             color: #4e4e4e;
-            margin: 1em 0;
+            margin: var(--default-spacing) 0;
         }
 
         /* Table styling */
@@ -211,7 +213,7 @@ main {
             table td {
                 color: black;
                 border: 1px solid black;
-                padding: 1em;
+                padding: var(--default-spacing);
                 text-align: center;
                 width: 25%;
             }
@@ -222,7 +224,7 @@ main {
     
             table th:hover {
                 background-color: black;
-                color: white;
+                color: #fff;
                 transition: .15s ease-in;
             }
 
@@ -235,7 +237,7 @@ main {
 
             }
             .cartBtn:hover {
-                background-color: #01DECA;
+                background-color: var(--accent-color-green);
                 transition: .15s ease-in;
             }
         }
@@ -287,7 +289,7 @@ main {
         justify-content: flex-start;
         order: 1;
         width: 50%;
-        padding-top: 1em;
+        padding-top: var(--default-spacing);
     }
 
     .h-title-and-price h2{
@@ -326,7 +328,7 @@ main {
     }
 
     .tp-to-product > label {
-        margin-left: 1em;
+        margin-left: var(--default-spacing);
         cursor: pointer;
     }
 
@@ -357,7 +359,7 @@ main {
         padding: calc(2.5em + 2em);
 
         .title-and-price span{
-            font-weight:normal;
+            font-weight: normal;
         }
     }
 
