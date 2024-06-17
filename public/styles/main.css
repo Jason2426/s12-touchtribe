@@ -122,7 +122,6 @@ main {
         border: none;
         color: inherit;
         font: inherit;
-        cursor: pointer;
     }
 
     table th.selected {
@@ -282,7 +281,6 @@ main {
     .h-product-img{
         order: 2;
         width: 58%;
-
     }
 
     .h-product-info{
@@ -327,11 +325,12 @@ main {
         align-items: center;
     }
 
-    .tp-to-product > p {
+    .tp-to-product > label {
         margin-left: 1em;
+        cursor: pointer;
     }
 
-    .tp-to-product > p:hover {
+    .tp-to-product > label:hover {
         color: var(--accent-color-green);
         transition: .15s ease-in;
     }
