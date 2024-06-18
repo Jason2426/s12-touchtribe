@@ -371,7 +371,7 @@ main {
         transition: .15s ease-in;
 
         svg path {
-            fill: black;
+            fill: var(--black);
         }
     }
 
@@ -413,7 +413,6 @@ main {
     }
 
     40% {
-        /* transform: rotate(-0.25turn); */
         border: 1px solid var(--accent-color-purple);
     }
 
