@@ -166,7 +166,7 @@ main {
     background-color: rgb(246, 246, 246);
 }
     .products-container {
-        padding: var(--large-spacing) var(--large-spacing);
+        padding: var(--large-spacing) var(--large-spacing) var(--default-spacing) var(--large-spacing) ;
 
         .product-img {
             width: 100%;
