@@ -21,7 +21,9 @@ body {
 
 main {
     --default-spacing : 1em;
+    --default-size : 1em; 
     --large-spacing : 2.5em;
+    --large-size: 2.5em;
     margin-top: 5em;
 }
 
@@ -144,7 +146,7 @@ main {
     .cartBtn {
         margin-left: 2.6em;
         background-color: var(--white);
-        padding: 1.05em;
+        padding: var(--default-size);
     }
 
     .cartBtn:hover {
@@ -400,7 +402,7 @@ main {
     
 }
 
-/* #region Keyframe animations */ 
+/* Keyframe animations */ 
 
   @keyframes jump {
 
@@ -442,4 +444,3 @@ main {
     }
 }
   
-  /* #endregion */
