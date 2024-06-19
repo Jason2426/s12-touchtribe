@@ -94,6 +94,8 @@ main {
         font-size: 1.2em;
         color: rgb(204, 205, 206);
         margin: var(--default-spacing) 0;
+        letter-spacing: 1.05px;
+
     }
 
     .size-and-add {
@@ -204,6 +206,8 @@ main {
             font-size: 1.3em;
             color: #4e4e4e;
             margin: var(--default-spacing) 0;
+            letter-spacing: 1.05px;
+
         }
 
         /* Table styling */
