@@ -390,7 +390,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: calc(var(--large-spacing) + 2em);
+        padding: 4.5em 4.5em 1.8em 4.5em;
 
         .title-and-price span{
             font-weight: normal;
