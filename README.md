@@ -37,8 +37,6 @@ Om bij te dragen aan de TouchTribe Webshop repository, volg deze stappen:
 4. Start de server door `npm start` uit te voeren.
 5. Klaar, Bekijk de site via de link.
 
-## Bronnen
-
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
