@@ -18,9 +18,7 @@ TouchTribe webshop waar medewerkers van het bedrijf, merchandise kan aanschaffen
 <!-- Voeg een mooie poster visual toe 📸 -->
 ![Screenshot 2024-06-20 at 12 07 39](https://github.com/Jason2426/s12-touchtribe/assets/143999883/8568f7d3-6ca3-479d-b5a5-ed1e6241e2a3)
 <!-- Voeg een link toe naar Github Pages 🌐-->
-
-## Gebruik
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+[TouchTribe Webshop](https://s12-touchtribe.onrender.com/)
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
