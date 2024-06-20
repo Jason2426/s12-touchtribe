@@ -27,6 +27,12 @@ TouchTribe webshop waar medewerkers van het bedrijf, merchandise kan aanschaffen
 
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+Om bij te dragen aan de TouchTribe Webshop repository, volg deze stappen:
+1. Clone de repository naar jouw lokale machine.
+2. Zorg ervoor dat Node.js is geïnstalleerd op jouw systeem.
+3. Installeer de benodigde npm-pakketten door `npm install` uit te voeren in de hoofdmap van het project.
+4. Start de server door `npm start` uit te voeren.
+5. Klaar, Bekijk de site via de link.
 
 ## Bronnen
 
