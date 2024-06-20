@@ -14,7 +14,9 @@
 
 ## Beschrijving
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
+TouchTribe webshop waar medewerkers van het bedrijf, merchandise kan aanschaffen met hun wel verdiende tokens. Bepaalde data op de website is opgehaald vannuit een API in Contentful. 
 <!-- Voeg een mooie poster visual toe 📸 -->
+![Screenshot 2024-06-20 at 12 07 39](https://github.com/Jason2426/s12-touchtribe/assets/143999883/8568f7d3-6ca3-479d-b5a5-ed1e6241e2a3)
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Gebruik
